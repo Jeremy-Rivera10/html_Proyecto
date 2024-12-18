@@ -1,0 +1,261 @@
+/*General*/
+body{
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*Header*/
+header{
+    display: flex;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/*Menu de Navegacion*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    color: #222;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+}
+
+.activo{
+    background-color: #ddd;
+    color: black;
+}
+
+/*Cambiar color al pasar el raton*/    
+nav ul a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Estilos para el Contenido de la Pajina Inicio*/
+.apartado1 {
+    background-color: #f1f1f1;
+    padding: 40px;
+}
+
+.apartado1 img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.apartado2 {
+    background-color: #f1f1f1;
+    padding: 40px;
+}
+
+
+
+/*Galeria*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.galeria img{
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.H_galeria{
+    padding: 20px;
+}
+
+.precio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 20px; 
+}
+
+/*Presupuesto*/
+
+.presupuesto{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/*Formulario*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    border-color: #007BFF;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox a{
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.checkbox a:hover{
+    text-decoration: underline;
+}
+
+ /* Contacto*/
+
+.contacto{
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contenido-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info{
+    max-width: 300px;
+    text-align: left;
+}
+
+.mapa img{
+    width: 400px; /*tamaño*/
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo de boton al dirrecionamiento del mapa*/
+
+.btn-mapa{
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-map:hover{
+    background-color: #0056b3;
+}
+/*Boton*/
+.boton{
+    text-align: center;
+}
+
+.boton button{
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton button:hover{
+    background: #0056b3;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.redes-sociales{
+    margin: 10px 0;
+}
+
+.redes-sociales a{
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociales img{
+    width: 30px; /*Tamaño del icono*/
+    height: 30px;
+    transition: transform 0.3s;
+    }
+
+.redes-sociales img:hover{
+    transform: scale(1.2); /*Efecto de zoom al pasar el cursor*/
+}
+
+footer .aviso-legal a{
+    color: white; /*Color del enlace*/
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .aviso-legal a:hover{
+    color :#007BFF; /*Cambia de color al pasar el cursor*/
+}
